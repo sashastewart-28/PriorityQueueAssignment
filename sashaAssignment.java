@@ -1,4 +1,4 @@
- import java.util.*;
+import java.util.*;
 class Student 
 {
 	String name;
@@ -47,12 +47,12 @@ class StudentComparer implements Comparator<Student>
 			int nameValue=((s1.giveName()).compareTo(s2.giveName()));
 			//storing token value for comparision
 			int tokenValue=s1.giveTokenNo()-s2.giveTokenNo();
-			//if both names are not same then returning value accoring to differnce 			//in ascii
+			//if both names are not same then returning value accoring to differnce in ascii
 			if(nameValue!=0)
 			{
 				return nameValue;
 			}
-			//if both names are equal then as cgpa is also equal so only thing left is 				//token no.
+			//if both names are equal then as cgpa is also equal so only thing left is token no.
 			else
 			{
 				return tokenValue;
